@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family:gilroy;
+    color: white;
+}
+#page1{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(https://images.unsplash.com/photo-1485470733090-0aae1788d5af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1834&q=80);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#nav{
+    height: 90px;
+    width: 100%;
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#nav>h1{
+    font-weight: 600;
+}
+#nav2{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#nav2>h4{
+    font-weight: 600;
+}
+#nav3{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#nav3 button{
+    color: white;
+    background-color: #ffffff72;
+    border: 1px solid rgba(255, 255, 255, 0.514);
+    padding: 10px 20px;
+}
+#page1content{
+    height: calc(100vh-90px);
+    width: 100%;
+    background: linear-gradient(white, black, black);
+}
+#page1content>h1{
+    position: absolute;
+    top: 150px;
+    left: 140px;
+    width: 700px;
+    font-size: 8vh;
+    line-height: 7.8vh;
+}
+#page1content>h3{
+    position: absolute;
+    top: 300px;
+    left:140px;
+    width: 470px;
+    font-size: 2.3vh;
+    color: rgba(255, 255, 255, 0.77);
+}
+#page1content>button{
+    padding: 15px 25px;
+    background-color: orangered;
+    border: none;
+    position: absolute;
+    top: 390px;
+    left: 140px;
+    font-size: 2vh;
+    color: rgba(255, 255, 255, 0.77);
+}
+#page2{
+    height: 100vh;
+    width: 100vw;
+  background-color: black;
+  padding: 100px 100px;
+  display: flex;
+  position: relative;
+}
+#page2>h1{
+    font-size: 6vh;
+}
+#page2 #left{
+    font-size: 38px;
+    position: absolute;
+    right: 15%;
+}
+#page2 #right{
+    color: orangered;
+    font-size: 43px;
+    position: absolute;
+    right: 11%;
+}
+#page2div{
+    position: absolute;
+    top: 40%;
+    height: 400px;
+    width:100%;
+    white-space: nowrap;
+    overflow-x:auto;
+    overflow-y: hidden;
+}
+#page2div::-webkit-scrollbar{
+    display: none;
+}
+.elem{
+    height: 100%;
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 40px;
+}
+.elem>img{
+    transition: all ease 1s;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+.elem>h4{
+    position: absolute;
+    bottom: 20%;
+    left: 24px;
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 0;
+    transition: all ease 1s;
+}
+.elem h2{
+    position: absolute;
+    bottom: 5%;
+    left: 24px;
+    font-size: 25px;
+    transition: all ease 1s;
+    font-weight: 600;
+    opacity: 0;
+}
+.elem:hover h4{
+    opacity: 1;;
+}
+.elem:hover h2{
+    opacity: 1;;
+}
+.elem:hover img{
+    scale: 1.2;
+}
